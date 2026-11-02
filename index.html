@@ -62,54 +62,87 @@
     </header>
 
     <main class="main-content">
-       
+
         <aside class="filtros-musica">
+
             <div class="filtro-grupo">
+
                 <span class="filtro-titulo">Géneros</span>
+
                 <label><input type="checkbox" name="genero" value="clasico"> Clásico</label>
+
                 <label><input type="checkbox" name="genero" value="rock"> Rock</label>
+
                 <label><input type="checkbox" name="genero" value="jazz"> Jazz</label>
+
                 <label><input type="checkbox" name="genero" value="pop"> Pop</label>
+
             </div>
 
             <div class="filtro-grupo">
+
                 <span class="filtro-titulo">Época</span>
+
                 <label><input type="checkbox" name="epoca" value="80s"> Años 80</label>
+
                 <label><input type="checkbox" name="epoca" value="90s"> Años 90</label>
+
                 <label><input type="checkbox" name="epoca" value="2000s"> Años 2000</label>
+
             </div>
 
             <div class="filtrar">
+
                 <button class="btn-voto" onclick="aplicarFiltro()">Filtrar</button>
+
             </div>
+
         </aside>
 
-        
+
         <section class="seccion-votaciones">
+
             <h2 class="titulo-votaciones">Votaciones</h2>
 
             <div class="contenedor-cards">
-                
+
                 <div class="card">
+
                     <img src="Imágenes/banda-1.jpg" alt="banda1" class="imagen-banda">
+
                     <p class="titulo-banda">Strawberry Fields Forever</p>
+
                     <div class="aumentarvoto">
-                        <span id="votos-banda-1">0</span>
+
+                        <span id="votos-banda-1">157</span>
+
                         <button class="btn-voto" onclick="Aumentarvoto('votos-banda-1')">voto</button>
+
                     </div>
+
                 </div>
 
-                
+
                 <div class="card">
+
                     <img src="Imágenes/banda-2.jpg" alt="banda2" class="imagen-banda">
+
                     <p class="titulo-banda">Las Piedras Rodantes</p>
+
                     <div class="aumentarvoto">
-                        <span id="votos-banda-2">0</span>
+
+                        <span id="votos-banda-2">108</span>
+
                         <button class="btn-voto" onclick="Aumentarvoto('votos-banda-2')">voto</button>
+
                     </div>
+
                 </div>
+
             </div>
+
         </section>
+
     </main>
 
 
