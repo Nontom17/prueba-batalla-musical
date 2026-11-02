@@ -1,0 +1,208 @@
+/* Reseteo básico para eliminar márgenes por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el Encabezado Principal */
+.parte-principal {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 1. Inicio de Sesión y Registro en la esquina superior izquierda */
+.btn-inicio-sesion {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-sesion, 
+.btn-registro {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-sesion:hover, 
+.btn-registro:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* 2. Logotipo y Título Principal en el centro */
+.logoprincipal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.imagenlogo {
+    width: 35px;
+    height: auto;
+}
+
+/* 3. Menú de navegación con enlaces horizontales debajo del título */
+.parte-principal nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.parte-principal nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.parte-principal nav a:hover {
+    opacity: 0.7;
+}
+
+.parte-principal nav h3 {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Contenedor Principal: Alinea Filtros (Izquierda) y Votaciones (Derecha) */
+.main-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px 20px;
+}
+
+/* Filtros (Izquierda, opciones hacia abajo) */
+.filtros-musica {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f1f1f1;
+  padding: 24px;
+  border-radius: 8px;
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.filtro-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filtro-titulo {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.filtro-grupo label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* Sección de Votaciones (Derecha) */
+.seccion-votaciones {
+  flex: 1;
+  text-align: center;
+}
+
+.titulo-votaciones {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Cards una al lado de la otra */
+.contenedor-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.imagen-banda {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.titulo-banda {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.aumentarvoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.aumentarvoto span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Estilo de Botón Negro -> Amarillo al hover */
+.btn-voto {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-voto:hover {
+  background-color: #ffcc00;
+  color: #000000;
+}
