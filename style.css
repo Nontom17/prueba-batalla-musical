@@ -60,6 +60,10 @@
     text-transform: uppercase;
 }
 
+.logoprincipal:hover .logo {
+    color: #ffcc00; /* Cambia el texto a amarillo */
+}
+
 .imagenlogo {
     width: 35px;
     height: auto;
@@ -155,7 +159,7 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
-  width: 240px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,7 +168,7 @@
 
 .imagen-banda {
   width: 100%;
-  height: 160px;
+  height: 300px;
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 12px;
@@ -184,7 +188,7 @@
 }
 
 .aumentarvoto span {
-  font-size: 1.2rem;
+  font-size: 48px;
   font-weight: bold;
 }
 

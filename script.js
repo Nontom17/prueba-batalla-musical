@@ -3,3 +3,7 @@ function Aumentarvoto(idvoto) {
     contador++;
     document.getElementById(idvoto).innerText = contador;
 }
+
+function aplicarFiltro() {
+    alert("Aplicando Flitro");
+}
